@@ -1,0 +1,11 @@
+package main
+
+import "fmt"
+
+func main() {
+	x := 7
+	y := 10
+	if y > x {
+		fmt.Println("y é maior que x")
+	}
+}

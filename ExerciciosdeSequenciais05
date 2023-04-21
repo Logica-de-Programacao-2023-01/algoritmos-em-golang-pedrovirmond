@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+// 'Faça um algoritmo que leia a idade de uma pessoa em anos e mostre a idade em dias.
+func main() {
+	var idade int
+	fmt.Print("Digite sua idade: ")
+	fmt.Scan(&idade)
+	idade_em_dias := (idade * 365)
+	fmt.Println("Sua idade em dias é: ", idade_em_dias)
+
+}

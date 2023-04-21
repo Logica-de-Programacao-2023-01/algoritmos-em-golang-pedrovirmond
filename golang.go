@@ -1,15 +1,5 @@
 package main
 
-import "fmt"
-
-// Faça um algoritmo que leia o peso e a altura de uma pessoa e calcule o seu IMC (Índice de Massa Corporal).
 func main() {
-	var peso float64
-	var altura float64
-	fmt.Print("Digite o valor de seu peso em kg: ")
-	fmt.Scanln(&peso)
-	fmt.Print("Digite o valor de sua altura em m: ")
-	fmt.Scanln(&altura)
-	IMC := peso / (altura * altura)
-	fmt.Printf("O seu IMC é: %.2f\\", IMC)
+
 }

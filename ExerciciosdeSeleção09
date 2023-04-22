@@ -1,0 +1,24 @@
+// Faça um algoritmo que leia três números reais e mostre-os em ordem crescente.
+package main
+
+import "fmt"
+
+func main() {
+	var n1, n2, n3 float64
+	fmt.Print("Digite o primeiro número: ")
+	fmt.Scanln(&n1)
+	fmt.Print("Digite o segundo número: ")
+	fmt.Scanln(&n2)
+	fmt.Print("Digite o terceiro número: ")
+	fmt.Scanln(&n3)
+	if n1 > n2 {
+		n1, n2 = n2, n1
+	}
+	if n2 > n3 {
+		n2, n3 = n3, n2
+	}
+	if n1 > n2 {
+		n1, n2 = n2, n1
+	}
+	fmt.Printf("Os números ordenados em ordem crescente : %.2f\n %.2f\n %.2f\n", n1, n2, n3)
+}

@@ -1,0 +1,20 @@
+// Faça um algoritmo que leia dois números inteiros e mostre o maior deles.
+package main
+
+import "fmt"
+
+func main() {
+	var n1 int
+	var n2 int
+	fmt.Print("Digite o primeiro número: ")
+	fmt.Scanln(&n1)
+	fmt.Print("Digite o segundo número: ")
+	fmt.Scanln(&n2)
+	if n1 > n2 {
+		fmt.Println(n1)
+	} else if n2 > n1 {
+		fmt.Println(n2)
+	} else {
+		fmt.Println("Os números são iguais")
+	}
+}

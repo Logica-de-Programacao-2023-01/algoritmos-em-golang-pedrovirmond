@@ -1,0 +1,28 @@
+// Faça um algoritmo que leia a altura e o sexo de uma pessoa e mostre se ela está abaixo, dentro ou acima do peso ideal, utilizando as fórmulas do exercício 3 da lista de algoritmos sequenciais.
+package main
+
+import "fmt"
+
+func main() {
+	var peso float64
+	var altura float64
+	var sexo string
+	fmt.Print("Digite o valor de seu peso em kg: ")
+	fmt.Scanln(&peso)
+	fmt.Print("Digite o valor de sua altura em m: ")
+	fmt.Scanln(&altura)
+	//O IMC não é influenciado pelo sexo da pessoa
+	fmt.Print("Digite o seu sexo: ")
+	fmt.Scanln(&sexo)
+	IMC := peso / (altura * altura)
+	//Abaixo de 18,5: abaixo do peso;
+	//Entre 18,5 e 24,9: peso normal;
+	//Entre 25,0 e 29,9: sobrepeso;
+	if IMC < 18.5 {
+		fmt.Println("Você está abaixo do seu peso ideal")
+	} else if IMC < 24.9 {
+		fmt.Println("Você está no seu peso ideal")
+	} else {
+		fmt.Println("Você está acima do seu peso ideal")
+	}
+}

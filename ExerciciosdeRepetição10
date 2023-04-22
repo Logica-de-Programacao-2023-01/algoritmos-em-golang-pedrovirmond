@@ -1,0 +1,23 @@
+// Faça um algoritmo que leia vários números inteiros e mostre o maior deles. A leitura deve ser interrompida quando for lido o valor zero.
+package main
+
+import "fmt"
+
+func main() {
+	var n, maior int
+	fmt.Print("Digite os números que desejar (0 encerrará a contagem): ")
+	for {
+		fmt.Scanln(&n)
+		if n == 0 {
+			break
+		}
+		if n > maior {
+			maior = n
+		}
+	}
+	if maior != 0 {
+		fmt.Printf("O maior número digitado foi: %d", maior)
+	} else {
+		fmt.Printf("Nenhum número foi digitado")
+	}
+}
